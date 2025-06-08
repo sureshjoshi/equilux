@@ -1,19 +1,20 @@
-# ![Open Quantum Design](./img/oqd-logo-text.png)
+# 
+
+<p align="center">
+  <img src="img/oqd-logo-black.png#only-light" alt="Logo" style="max-height: 200px;">
+  <img src="img/oqd-logo-white.png#only-dark" alt="Logo" style="max-height: 200px;">
+</p>
 
 <div align="center">
     <h2 align="center">
-        Program the world's first open-source, full-stack quantum computer.
+    Open Quantum Design
     </h2>
 </div>
-
-![Python](https://img.shields.io/badge/Python-3.10_|_3.11_|_3.12-blue)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
 <!-- prettier-ignore -->
 /// admonition | Note
     type: note
-Welcome to the Open Quantum Design framework for programming quantum computers.
-This documentation is still under development, please feel to contribute! © Open Quantum Design
+Welcome to the Open Quantum Design documentation.
 ///
 
 ## What's here

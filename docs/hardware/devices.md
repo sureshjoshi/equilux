@@ -1,17 +1,15 @@
-# ![Open Quantum Design](../img/oqd-logo-text.png)
+# 
+
+<p align="center">
+  <img src="../img/oqd-logo-black.png#only-light" alt="Logo" style="max-height: 200px;">
+  <img src="../img/oqd-logo-white.png#only-dark" alt="Logo" style="max-height: 200px;">
+</p>
 
 <div align="center">
     <h2 align="center">
         Open Quantum Design: Quantum Processor Hardware
     </h2>
 </div>
-
-<!-- prettier-ignore -->
-/// admonition | Note
-    type: note
-Welcome to the Open Quantum Design.
-This documentation is still under development, we welcome contributions! © Open Quantum Design
-///
 
 
 ## What's Here
@@ -72,7 +70,7 @@ block-beta
        space
        RTHardware["Lasers, Modulators, Photodetection, Ion Trap"]
        space
-       RTApparatus["Trapped-Ion QPU (<sup>171</sup>Yt<sup>+</sup>, <sup>133</sup>Ba<sup>+</sup>)"]
+       RTApparatus["Trapped-Ion QPU (<sup>171</sup>Yb<sup>+</sup>, <sup>133</sup>Ba<sup>+</sup>)"]
        space
     end
     space
@@ -94,13 +92,14 @@ block-beta
    RTGateware --> RTHardware
    RTHardware --> RTApparatus
 
-   classDef title fill:#d6d4d4,stroke:#333,color:#333;
-   classDef digital fill:#E7E08B,stroke:#333,color:#333;
-   classDef analog fill:#E4E9B2,stroke:#333,color:#333;
-   classDef atomic fill:#D2E4C4,stroke:#333,color:#333;
-   classDef realtime fill:#B5CBB7,stroke:#333,color:#333;
+   classDef title fill:#23627D,stroke:#141414,color:#FFFFFF;
+   classDef digital fill:#c3e1ee,stroke:#141414,color:#141414;
+   classDef analog fill:#afd7e9,stroke:#141414,color:#141414;
+   classDef atomic fill:#9ccee3,stroke:#141414,color:#141414;
+   classDef realtime fill:#88c4dd,stroke:#141414,color:#141414;
 
-    classDef highlight fill:#f2bbbb,stroke:#333,color:#333,stroke-dasharray: 5 5;
+    classDef highlight fill:#F19D19,stroke:#141414,color:#141414,stroke-dasharray: 5 5;
+    classDef normal fill:#fcebcf,stroke:#141414,color:#141414;
 
     class InterfaceTitle,IRTitle,EmulatorsTitle,RealTimeTitle title
     class InterfaceDigital,IRDigital,EmulatorDigital digital
@@ -109,6 +108,9 @@ block-beta
     class RTSoftware,RTGateware,RTHardware,RTApparatus realtime
 
     class RealTime highlight
+    class Emulator normal
+    class IR normal
+    class Interface normal
 ```
 
 
