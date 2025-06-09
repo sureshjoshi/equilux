@@ -10,3 +10,9 @@
 [submodule "oqd-compiler-infrastructure"]
 	path = oqd-compiler-infrastructure
 	url = https://github.com/OpenQuantumDesign/oqd-compiler-infrastructure
+[submodule "oqd-trical"]
+	path = oqd-trical
+	url = https://github.com/OpenQuantumDesign/oqd-trical
+[submodule "oqd-dataschema"]
+	path = oqd-dataschema
+	url = https://github.com/OpenQuantumDesign/oqd-dataschema

@@ -4,7 +4,7 @@ site_description: Open Quantum Design - the world's first open-source quantum co
 repo_name: OpenQuantumDesign/equilux
 repo_url: https://github.com/OpenQuantumDesign/equilux.git
 
-copyright: Copyright &copy; 2024 Open Quantum Design
+copyright: Copyright &copy; 2024-2025 Open Quantum Design
 
 use_directory_urls: false
 
@@ -41,36 +41,40 @@ nav:
 
   - Core: "!include ./oqd-core/mkdocs.yaml"
   - Emulators:
-      - Analog Emulators: "!include ./oqd-analog-emulator/mkdocs.yaml"
-  #      - Atomic Emulators: '!include ./oqd-analog-emulator/mkdocs.yaml'
+      - Analog Emulator: "!include ./oqd-analog-emulator/mkdocs.yaml"
+      - Trapped Ion Calculator: '!include ./oqd-trical/mkdocs.yaml'
   - Cloud: "!include ./oqd-cloud/mkdocs.yaml"
   - Compiler Infrastructure: "!include ./oqd-compiler-infrastructure/mkdocs.yaml"
   - Hardware:
-      - Open Hardware Devices: hardware/devices.md
+      - OQD Processors: hardware/devices.md
+      - OQD Modules: hardware/modules.md
       - About OQD Hardware: hardware/about-oqd.md
+  - Utilities:
+      - Data schemas: "!include ./oqd-dataschema/mkdocs.yaml"
   - About: about.md
 
 theme:
   name: material
-
-  logo: img/oqd-logo.png
-  favicon: img/oqd-logo.png
+  logo: img/oqd-icon.png
+  favicon: img/oqd-icon.png
 
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: teal
-      accent: pink
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: teal
-      accent: pink
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: Switch to light mode
+
+
 
   features:
     - search.suggest
@@ -98,6 +102,8 @@ plugins:
             - ./oqd-core/src
             - ./oqd-analog-emulator/src
             - ./oqd-cloud/src
+            - ./oqd-trical/src
+            - ./oqd-dataschema/src
           options:
             show_source: true
             show_root_heading: true
@@ -164,3 +170,4 @@ extra_javascript:
 extra_css:
   - stylesheets/headers.css
   - stylesheets/admonitions.css
+  - stylesheets/brand.css

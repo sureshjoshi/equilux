@@ -117,19 +117,26 @@ block-beta
    RTGateware --> RTHardware
    RTHardware --> RTApparatus
 
-    classDef title fill:#d6d4d4,stroke:#333,color:#333;
-    classDef digital fill:#E7E08B,stroke:#333,color:#333;
-    classDef analog fill:#E4E9B2,stroke:#333,color:#333;
-    classDef atomic fill:#D2E4C4,stroke:#333,color:#333;
-    classDef realtime fill:#B5CBB7,stroke:#333,color:#333;
+   classDef title fill:#23627D,stroke:#141414,color:#FFFFFF;
+   classDef digital fill:#c3e1ee,stroke:#141414,color:#141414;
+   classDef analog fill:#afd7e9,stroke:#141414,color:#141414;
+   classDef atomic fill:#9ccee3,stroke:#141414,color:#141414;
+   classDef realtime fill:#88c4dd,stroke:#141414,color:#141414;
 
-    classDef highlight fill:#f2bbbb,stroke:#333,color:#333,stroke-dasharray: 5 5;
+   classDef highlight fill:#F19D19,stroke:#141414,color:#141414,stroke-dasharray: 5 5;
+   classDef normal fill:#fcebcf,stroke:#141414,color:#141414;
 
-    class InterfaceTitle,IRTitle,EmulatorsTitle,RealTimeTitle title
-    class InterfaceDigital,IRDigital,EmulatorDigital digital
-    class InterfaceAnalog,IRAnalog,EmulatorAnalog analog
-    class InterfaceAtomic,IRAtomic,EmulatorAtomic atomic
-    class RTSoftware,RTGateware,RTHardware,RTApparatus realtime
+   class InterfaceTitle,IRTitle,EmulatorsTitle,RealTimeTitle title
+   class InterfaceDigital,IRDigital,EmulatorDigital digital
+   class InterfaceAnalog,IRAnalog,EmulatorAnalog analog
+   class InterfaceAtomic,IRAtomic,EmulatorAtomic atomic
+   class RTSoftware,RTGateware,RTHardware,RTApparatus realtime
+
+
+   class Emulator normal
+   class IR normal
+   class RealTime normal
+   class Interface normal
 ```
 
 ### Software <a name="software"></a>
